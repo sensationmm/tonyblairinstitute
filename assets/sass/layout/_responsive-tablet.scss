@@ -1,0 +1,102 @@
+
+@media (min-width: $tablet-portrait) and (max-width: $tablet-landscape) {
+	.menu-icon {
+		left: 30px;
+	}
+}
+
+@media (max-width: $tablet-landscape) {
+
+	body.noscroll {
+		overflow: hidden;
+	}
+
+	.header {
+		left: -100%;
+		width: 50%;
+		max-width: 200px;
+		padding: 130px 30px 0px 0px;
+
+		.logo, nav.main {
+			width: 100%;
+			margin-bottom: 33px;
+		}
+
+	nav.main a {
+		padding-left: 30px;
+	}
+
+		.logo {
+			margin-left: 30px;
+		}
+
+		&::after {
+			display: none;
+			content: " ";
+			background: #000000;
+			width: 10000px;
+			height: 100%;
+			top: 0px;
+			left: 100%;
+			position: absolute;
+			z-index: -1;
+			@include opacity(0.4);
+
+			webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		}
+
+		&.active {
+			&:after {
+				display: block;
+			}
+		}
+	}
+
+	.menu-icon {
+		display: block;
+		margin-top: 5%;
+	}
+
+	.page-title {
+		margin-top: 12%;
+		padding-bottom: 2.5%;
+		margin-bottom: 2.5%;
+	}
+
+	.body {
+		@include span(full);
+	}
+
+	body.home {
+		.pillars {
+			height: 100px;
+		}
+	}
+
+}
+
+@media (max-width: $tablet-portrait), (max-height: 900px) {
+
+	body.home, body.careers {
+		.banner-home {
+			height: auto;
+			padding-bottom: 13.699%;
+		}
+	}
+
+	body.careers {
+		.banner-home {
+			.banner-text {
+				padding-bottom: 0px;
+			}
+		}
+
+		.positions {
+			margin-top: 0px;
+		}
+	}
+
+}

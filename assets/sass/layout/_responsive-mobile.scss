@@ -1,0 +1,393 @@
+
+@media (max-width: $mobile-landscape) {
+
+	.menu-icon {
+		margin-top: 13.6%;
+	}
+
+	.body {
+		@include span(full);
+	}
+
+	body {
+		h1 {
+			@include fontsize(36, 1);
+		}
+
+		ul.bulleted-list {
+			li {
+				padding-left: 0px;
+				padding-right: 0px;
+				padding-top: 8%;
+				margin-bottom: 10.667%;
+
+				&:before {
+					top: 0px;
+					left: 0px;
+				}
+			}
+		}
+
+		.page-title {
+			padding-left: 8%;
+			margin-top: 40%;
+			padding-bottom: 5.333%;
+			margin-bottom: 5.333%;
+		}
+
+		.section-title {
+			padding-left: 8%;
+			padding-bottom: 5.333%;
+			margin-bottom: 10.667%;
+		}
+
+		header {
+			&.banner {
+				&.banner-home {
+					@include clearfix;
+				}
+				.banner-text {
+					@include span(full);
+					padding: 0 8% 21.333% 8%;
+				}
+			}
+
+			.page-header {
+				@include span(full);
+				padding: 0 8% 21.333% 8%;
+			}
+		}
+
+		.content-pad {
+			&:before { display: none; }
+		}
+
+		.main-article {
+			padding-top: 23.2%;
+			margin-bottom: 21.333%;
+
+			.main-article-text {
+				padding-left: 8%;
+				padding-right: 8%;
+
+				&.two-col {
+					-webkit-column-count: 1;
+				    -moz-column-count: 1;
+				    column-count: 1;
+				}
+			}
+
+			.share {
+				padding-left: 8%;
+				padding-right: 8%;
+			}
+
+			.share {
+				text-align: left;
+				padding-bottom: 10.667%;
+			}
+
+			.image-block {
+				.image-block-image{
+					@include span(full);
+					padding-bottom: 86.4%;
+					margin-bottom: 10.667%;
+				}
+
+				.image-block-about {
+					@include span(full);
+					position: relative;
+					padding-left: 8%;
+
+					> div {
+						top: 0;
+						transform: none;
+					}
+
+					.image-about-header {
+						padding-bottom: 2.4%;
+						margin-bottom: 5.333%;
+					}
+				}
+			}
+
+			.quote-block {
+				blockquote, cite {
+					width: 85%;
+				}
+
+				blockquote {
+					@include fontsize(24, 1);
+				}
+			}
+
+			> div:not(.sections) { 
+				padding-bottom: 21.333% !important;
+				margin-bottom: 0px;
+			}
+		}
+
+		section { 
+			padding-bottom: 21.333% !important;
+		}
+
+		.sections {
+			padding-bottom: 0px;
+			background: none;
+			margin-bottom: 21.333%;
+
+			.section {
+				margin-bottom: 2.667%;
+				background: #ffffff;
+
+				.section-image, .section-text {
+					@include span(full);
+				}
+
+				&.section-text-left, &.section-text-right {
+					.section-text {
+						padding: 21.333% 7.467% !important;
+					}
+				}
+
+				.section-image {
+					position: relative;
+					height: 0px;
+					padding-bottom: 100%;
+				}
+
+				.section-text {					
+					padding: 21.333% 7.467%;
+				}
+
+				&.pillar1, &.pillar2, &.pillar3, &.pillar4 {
+					padding-bottom: 0px !important;
+					margin-bottom: 2.66%;
+				}
+			}
+		}
+
+		.latest-news, .news-list {
+			margin-bottom: 21.333%;
+
+			.news-article, .news-item {
+				padding: 0px;
+				width: 48.8%;
+				margin-right: 2.4%;
+
+				&:nth-child(2n+1) {
+					margin-right: 0px;
+				}
+				.news-article-image, .news-article-text {
+					@include span(full);
+				}
+
+				.news-article-image {
+					position: relative;
+					height: 0px;
+					padding-bottom: 100%;
+				}
+
+				.news-article-text {	
+					padding: 10.666% 16% 21.333% 16%;
+
+					.news-article-date {
+						@include fontsize(10, 3);
+					}
+
+					.news-article-title, .news-article-title h2 {
+						@include fontsize(14, 1.5);
+					}
+
+					p {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.latest-news {
+			background: #ffffff;
+
+			.section-header {
+				background: $background;
+				margin-bottom: 0px;
+			}
+
+			.news-article {
+				width: calc(50% + 5px);
+				border-right: 10px solid $background;
+				margin-right: 0px;
+
+				&:nth-child(2n + 1) {
+					width: calc(50% - 5px);
+					border-right: 0px;
+				}
+			}
+		}
+
+		.news-list {
+			@include span(full);
+			padding-left: 0px;
+				background: #ffffff;
+
+			.news-item {
+				width: calc(50% + 5px);
+				margin-right: 0px;
+				border-right: 10px solid $background;
+				background: #ffffff;
+				border-top: 10px solid $background;
+
+				&:after {
+					display: none;
+				}
+
+				&:nth-child(2n) {
+					width: calc(50% - 5px);
+					border-right: 0px;
+				}
+				&:nth-child(3n) {
+					float: left;
+				}
+
+				&:nth-child(3n+1) {
+					clear: none;
+				}
+			}
+		}
+
+		.load-more {
+			margin-left: 0px;
+		}
+
+		.section-header {
+			padding: 0 7.467% 5.333% 7.467%;
+		}
+
+		.newsletter {
+			padding: 21.333% 7.467%;
+			.newsletter-header, .newsletter-form {
+				@include span(full);
+				padding: 0px;
+			}
+		}
+
+		footer {
+			margin-top: 14.984%;
+
+			.social {
+				margin-bottom: 7%;
+			}
+
+			nav.main {
+				display: none;
+			}
+		}
+
+	}
+
+	body.home {
+		.pillars {
+			height: auto;
+			@include clearfix;
+
+			.pillar {
+				@include span(full);
+
+				div {
+					top: 0px;
+					transform: none;
+					padding: 10.667% 0;
+				}
+			}
+		}
+	}
+
+	body.news {
+		article.latest-news {
+			margin-bottom: 0px;
+			margin-top: 21.333%;
+
+			.news-article {
+				@include span(full);
+
+				.news-article-text {
+					p {
+						display: block;
+					}
+				}
+			}
+		}
+
+		article.news-item {
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+
+		.main-article-text.article-intro, .main-article-details {
+			@include span(full);
+			padding: 0 8%;
+		}
+	}
+
+	body.careers {
+		.positions {
+			padding-left: 0px;
+			padding-bottom: 0px;
+			margin-top: 0px;
+			margin-bottom: 21.333%;
+
+			.position {
+				padding-top: 21.333%;
+				padding-bottom: 21.333%;
+				margin-bottom: 2.666%;
+
+				.position-about, .position-meta {
+					@include span(full);
+				}
+
+				.position-meta {
+					margin-bottom: 5.333%;
+				}
+
+				.link {
+					margin-top: 10.666%;
+				}
+			}
+		}
+	}
+
+	body.contact {
+		article.contact {
+			background: none;
+			padding-left: 0px;
+			margin-top: 16%;
+
+			.contact-type {
+				background-color: #ffffff;
+				@include span(full);
+				padding: 56% 8% 21.333% 8%;
+				margin-bottom: 2.667%;
+				background-position: 8% 21.333%;
+			}
+		}
+
+		.social {
+			padding: 21.333% 8%;
+			text-align: left;
+		}
+	}
+
+
+	article.text-page.content-pad {
+		padding: 21.333% 8%;
+	}
+
+	.form {
+		.form-half {
+			@include span(full);
+		}
+	}
+
+}

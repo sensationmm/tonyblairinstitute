@@ -1,0 +1,53 @@
+body.careers {
+
+	.menu-icon {
+		color: #ffffff;
+	}
+
+	.page-title {
+		color: #ffffff;
+		border-color: #ffffff;
+	}
+
+	.banner-home {
+		height: 85vh;
+		color: #ffffff;
+
+		.read-more a {
+			color: #ffffff;
+			border-color: #ffffff;
+		}
+	}
+
+	.positions {
+		margin-top: -18.254%;
+		padding-bottom: 4.762%;
+		padding-left: 8.651%;
+
+		.position {
+			background: #ffffff;
+			padding: 6.349% 8.651%;
+			border-top: 6px solid #000000;
+			margin-bottom: 1.587%;
+			@include clearfix;
+
+			.position-about {
+				@include span(8);
+			}
+
+			.position-meta {
+				@include span(3 last);
+				@include fontsize(16, 1.8);
+
+				.meta-section-header {
+					text-transform: uppercase;
+					font-family: 'Brandon Medium';
+				}
+
+				.meta-section {
+					margin-bottom: 6.984%;
+				}
+			}
+		}
+	}
+}

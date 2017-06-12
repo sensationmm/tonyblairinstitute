@@ -1,0 +1,80 @@
+
+.form {
+	@include span(full);
+
+	input[type="text"], input[type="email"] {
+		width: 100%;
+	}
+
+	.form-full {
+		@include span(full);
+		margin-bottom: 20px;
+		padding-right: 50px;
+	}
+
+	.form-half {
+		@include span(6);
+		margin-bottom: 20px;
+		padding-right: 50px;
+
+		&:nth-child(2n) {
+			@include last;
+		}
+	}
+}
+
+form.form-newsletter {
+	input[type="text"], input[type="email"] {
+		border: 0px;
+		outline: 0px;
+		border-bottom: 2px solid #E5E5E5;
+		color: $textMid;
+		@include fontsize(24);
+		padding-bottom: 10px;
+
+		&.error {
+			border-color: #870202;
+		}
+	}
+
+	input[type="checkbox"] {
+		width: 30px;
+		height: 30px;
+		border: 2px solid #e5e5e5;
+		background: center center no-repeat;
+		background-size: contain;
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+
+		&:checked {
+			background-image: url(../images/tick.png);
+		}
+	}
+
+	label.checkbox-label {
+		@include fontsize(16);
+		margin-left: 50px;
+	}
+
+	.interested {
+		text-transform: uppercase;
+		@include fontsize(16);
+		font-family: 'Brandon Bold';
+		margin-top: 25px;
+	}
+
+	button {
+		margin-top: 30px;
+	}
+
+	.error {
+		color: $warning !important;
+		border-color: $warning !important;
+
+		&::-webkit-input-placeholder { color: $warning !important; }
+		&::-moz-placeholder { color: $warning !important; }
+		&:-ms-input-placeholder { color: $warning !important; }
+		&:-moz-placeholder { color: $warning !important; }
+	}
+}

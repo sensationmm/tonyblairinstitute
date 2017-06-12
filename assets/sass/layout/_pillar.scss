@@ -1,0 +1,135 @@
+body.pillar {
+
+	&.pillar1 {
+		.header,
+		.bulleted-list li:before,
+		.share .social-icon a { 
+			background-color: $pillar1 !important; 
+		}
+
+		.page-title, 
+		.section-title,
+		.image-about-header { 
+			border-color: $pillar1 !important; 
+		}
+
+		h1, 
+		.page-title, 
+		.section-title,
+		.image-about-header,
+		blockquote { 
+			color: $pillar1; 
+		}
+
+		.header {
+
+			nav {
+				a {
+					border-color: $pillar1 !important; 
+				}
+			}
+		}
+	}
+
+	&.pillar2 {
+		.header,
+		.bulleted-list li:before,
+		.share .social-icon a { 
+			background-color: $pillar2 !important; 
+		}
+
+		.page-title, 
+		.section-title,
+		.image-about-header { 
+			border-color: $pillar2 !important; 
+		}
+
+		h1, 
+		.page-title, 
+		.section-title,
+		.image-about-header,
+		blockquote { 
+			color: $pillar2; 
+		}
+
+		.header {
+
+			nav {
+				a {
+					border-color: $pillar2 !important; 
+				}
+			}
+		}
+	}
+
+	&.pillar3 {
+		.header,
+		.bulleted-list li:before,
+		.share .social-icon a { 
+			background-color: $pillar3 !important; 
+		}
+
+		.page-title, 
+		.section-title,
+		.image-about-header { 
+			border-color: $pillar3 !important; 
+		}
+
+		h1, 
+		.page-title, 
+		.section-title,
+		.image-about-header,
+		blockquote { 
+			color: $pillar3; 
+		}
+
+		.header {
+
+			nav {
+				a {
+					border-color: $pillar3 !important; 
+				}
+			}
+		}
+	}
+
+	&.pillar4 {
+		.header,
+		.bulleted-list li:before,
+		.share .social-icon a { 
+			background-color: $pillar4 !important; 
+		}
+
+		.page-title, 
+		.section-title,
+		.image-about-header { 
+			border-color: $pillar4 !important; 
+		}
+
+		h1, 
+		.page-title, 
+		.section-title,
+		.image-about-header,
+		blockquote { 
+			color: $pillar4; 
+		}
+
+		.header {
+
+			nav {
+				a {
+					border-color: $pillar4 !important; 
+				}
+			}
+		}
+	}
+
+}
+
+
+.sections .section { 
+	&.pillar1 { .section-text { background-color: $pillar1; } }
+	&.pillar2 { .section-text { background-color: $pillar2; } }
+	&.pillar3 { .section-text { background-color: $pillar3; } }
+	&.pillar4 { .section-text { background-color: $pillar4; } }
+}

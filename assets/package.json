@@ -1,0 +1,17 @@
+{
+  "name": "Sensation",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Kevin Reynolds <kevin@sensationmultimedia.co.uk>",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.1.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

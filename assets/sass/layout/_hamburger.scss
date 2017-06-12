@@ -1,0 +1,120 @@
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  background: none;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  right: 0px;
+  height: 4px;
+  background:#000000;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #000000;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+
+body.home, body.careers {
+  .c-hamburger span { background: #ffffff; }
+  .c-hamburger span::before, .c-hamburger span::after { background: #ffffff; }
+}
+body.pillar1 {
+  .c-hamburger span { background: $pillar1; }
+  .c-hamburger span::before, .c-hamburger span::after { background: $pillar1; }
+}
+body.pillar2 {
+  .c-hamburger span { background: $pillar2; }
+  .c-hamburger span::before, .c-hamburger span::after { background: $pillar2; }
+}
+body.pillar3 {
+  .c-hamburger span { background: $pillar3; }
+  .c-hamburger span::before, .c-hamburger span::after { background: $pillar3; }
+}
+body.pillar4 {
+  .c-hamburger span { background: $pillar4; }
+  .c-hamburger span::before, .c-hamburger span::after { background: $pillar4; }
+}
+
+.c-hamburger.is-active span::before, .c-hamburger.is-active span::after { background: #ffffff !important; }
+
+
+body.home, body.careers {
+  .c-hamburger.is-active span { background: #000000; }
+}
+
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
